@@ -46,7 +46,7 @@ jobs:
           retention-days: 7
 
       - name: Upload Pages artifact
-        if: always() && github.event_name == 'push'
+        if: always()
         uses: actions/upload-pages-artifact@v3
         with:
           path: target/site/allure-maven-plugin/
@@ -59,7 +59,7 @@ jobs:
 
   deploy-pages:
     needs: test
-    if: always() && github.event_name == 'push'
+    if: always()
     runs-on: ubuntu-latest
     environment:
       name: github-pages
