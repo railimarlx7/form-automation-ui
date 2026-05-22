@@ -5,6 +5,9 @@ target/
 allure-results/
 .allure/
 
+# Local docs
+ARCHITECTURE.md
+
 # IDEs
 .idea/
 .vscode/
