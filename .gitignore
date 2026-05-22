@@ -1,6 +1,10 @@
 target/
 *.class
 
+# Allure
+allure-results/
+.allure/
+
 # IDEs
 .idea/
 .vscode/
