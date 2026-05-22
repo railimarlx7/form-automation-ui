@@ -9,7 +9,7 @@ Feature: Form Registration
 
     Examples:
       | username | password | name | message                   |
-      | jrlima   | 123      |      | Existem campos em branco. |
+      | jrlima   | 123      |      | This message will not match. |
 
   @registration
   Scenario Outline: Submitting complete data stores the entry in the table
